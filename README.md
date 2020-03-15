@@ -1,12 +1,40 @@
 # three
-Dedicated to all things three - a library inspired by [five.js](https://github.com/jackdclark/five)
+Dedicated to all things three - a projectinspired by [five.js](https://github.com/jackdclark/five)
 
-## Usage
-**import the three module**
+## Install
+
 ```
->>> import three
+git clone https://github.com/JasonTurley/three
+python3
+>>> from three import *
 ```
 
-## What I Learned
-* How to build a pip package (todo)
-* More about 3
+## Examples
+
+**Addition**
+```
+three() + three() # 6
+```
+
+**Subtraction**
+```
+three() - three() # 0
+```
+
+**Multiplication**
+```
+three() * three() # 9
+```
+
+**Division**
+```
+three() / three() # 1
+```
+
+**Numbers**
+```
+three() # 3
+squared() # 9
+cubed() # 27
+dozen() # 36
+```

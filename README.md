@@ -1,7 +1,7 @@
 # three
 A library dedicated to the beauty of the number three. 
 
-This is silly personal project inspired by the equally silly JavaScript library [five.js](https://github.com/jackdclark/five) by [Jack Clark](https://github.com/jackdclark/)
+This is silly personal project inspired by the equally silly JavaScript library [five.js](https://github.com/jackdclark/five) by [Jack Clark](https://github.com/jackdclark/).
 
 ## How to install
 To install the library, simply clone or fork the repository. I am working on releasing this as a pip package for easier download in the future.

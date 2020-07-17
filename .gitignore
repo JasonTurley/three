@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution and packaging
+Pipfile
+Pipfile.lock
+build/
+dist/
+love-three-1.0.0
+*.egg-info

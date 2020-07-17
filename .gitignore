@@ -6,5 +6,5 @@ Pipfile
 Pipfile.lock
 build/
 dist/
-love-three-1.0.0
+love-three-*
 *.egg-info

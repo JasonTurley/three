@@ -18,7 +18,7 @@ URL = 'https://github.com/JasonTurley/three'
 EMAIL = 'jasonturley0@gmail.com'
 AUTHOR = 'Jason Turley'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '1.0.0'
+VERSION = '1.1.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -122,7 +122,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
-        'Programming Language :: Python :: Implementation :: PyPy'
     ],
     # $ setup.py publish support.
     cmdclass={

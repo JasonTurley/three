@@ -4,9 +4,9 @@ A package dedicated to the love of 3.
 This is silly personal project inspired by the equally silly JavaScript library [five.js](https://github.com/jackdclark/five) by [Jack Clark](https://github.com/jackdclark/).
 
 ## How to install
-To install the library, simply clone or fork the repository. I am working on releasing this as a pip package for easier download in the future.
+
 ```
-git clone https://github.com/JasonTurley/three
+pip install love-three
 ```
 
 ## Usage examples
@@ -68,8 +68,6 @@ All the code needed is contained within:
 ```
 three.py
 ```
-
-*An automated test suite is under-construction!*
 
 ## How to contribute
 Contributions are encouraged and welcomed!

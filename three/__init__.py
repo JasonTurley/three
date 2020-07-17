@@ -1,1 +1,1 @@
-import three
+from .three import *

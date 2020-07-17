@@ -1,5 +1,5 @@
 # three.py
-A library dedicated to the beauty of the number three. 
+A package dedicated to the love of 3. 
 
 This is silly personal project inspired by the equally silly JavaScript library [five.js](https://github.com/jackdclark/five) by [Jack Clark](https://github.com/jackdclark/).
 

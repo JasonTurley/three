@@ -79,3 +79,6 @@ Contributions are encouraged and welcomed!
 3. Commit your changes (```git commit -am feature/my-cool-feature```)  
 4. Push to the branch (```git push origin feature/my-cool-feature```)
 5. Create a new Pull Request
+
+## Meta
+Distributed under the MIT license. See [LICENSE.txt](https://github.com/JasonTurley/three/edit/master/LICENSE.txt) for more information.

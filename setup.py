@@ -13,7 +13,7 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'love-three'
-DESCRIPTION = 'A package dedicated to the love of 3.'
+DESCRIPTION = 'A package for all those who love the number 3.'
 URL = 'https://github.com/JasonTurley/three'
 EMAIL = 'jasonturley0@gmail.com'
 AUTHOR = 'Jason Turley'

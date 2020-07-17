@@ -1,4 +1,4 @@
-# three
+# three.py
 A library dedicated to the beauty of the number three. 
 
 This is silly personal project inspired by the equally silly JavaScript library [five.js](https://github.com/jackdclark/five) by [Jack Clark](https://github.com/jackdclark/).
@@ -17,7 +17,7 @@ Begin by importing the three module into your code.
 
 The module can be used to perform:
 
-### arithmetic
+**arithmetic**
 ```
 >>> three.three() + three.three() 
 6
@@ -31,7 +31,7 @@ The module can be used to perform:
 27
 ```
 
-### boolean expressions
+**boolean expressions**
 ```
 >>> a = 2
 >>> if three.is_three(a):
@@ -42,7 +42,7 @@ The module can be used to perform:
 a does not equal three :(
 ```
 
-### filter, map, and reduce
+**filter, map, and reduce**
 ```
 >>> values = [1, None, 3, "beans", False, 3]
 >>> three.filter(values)
@@ -51,10 +51,9 @@ a does not equal three :(
 [3, 3, 3, 3, 3, 3]
 >>> three.reduce(values)
 3   
->>>
 ```
 
-### novelty and humor
+**novelty and humor**
 ```
 >>> three.leches()
 ['Condensed', 'Evaporated', 'Heavy cream']
@@ -70,7 +69,7 @@ All the code needed is contained within:
 three.py
 ```
 
-An automated test suite is under-construction!
+*An automated test suite is under-construction!*
 
 ## How to contribute
 Contributions are encouraged and welcomed!

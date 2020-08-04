@@ -3,6 +3,9 @@ A package dedicated to the love of 3.
 
 This is silly personal project inspired by the equally silly JavaScript library [five.js](https://github.com/jackdclark/five) by [Jack Clark](https://github.com/jackdclark/).
 
+
+![THREE](https://www.clker.com/cliparts/3/1/p/f/N/4/tow-md.png)
+
 ## How to install
 
 ```

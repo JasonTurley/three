@@ -35,7 +35,7 @@ def is_three(x):
 
 
 def filter(items):
-    return [item for item in items if is_three(item) == True]
+    return [item for item in items if is_three(item)]
 
 
 def map(items):
@@ -52,10 +52,27 @@ def threes():
 def n_threes(n):
     return list(itertools.islice(threes(), n))
 
-def force_three(func):
-    def inner(*args, **kwargs):
-        return 3
-    return inner
+# Language
+
+def letters():
+    return ['t', 'h', 'r', 'e', 'e']
+
+
+def spanish():
+    return 'tres'
+
+
+def german():
+    return 'drei'
+
+
+def french():
+    return 'drois'
+
+
+def italian():
+    return 'tre'
+
 
 # Currency
 
@@ -68,11 +85,17 @@ def cents():
 
 
 # Rule of Threes
+
 def rule_of():
     return 'Things that come in 3s are inherently more appealing.'
 
 
+def is_appealing(items):
+    return len(items) == 3
+
+
 # Novelty
+
 def musketeers():
     return ['Athos', 'Aramis', 'Porthos']
 
@@ -90,6 +113,11 @@ def little_pigs():
     return ['Straw', 'Sticks', 'Bricks']
 
 
+def blind_mice():
+    """Returns the names of the three blind mice in shrek"""
+    return ['Forder', 'Gorder', 'Horder']
+
+
 # Food
 
 def leches():
@@ -99,3 +127,12 @@ def leches():
 def peas():
     return 'As close as three peas in a pod'
 
+# Misc
+
+def string():
+    return '3'
+
+def force_three(func):
+    def inner(*args, **kwargs):
+        return 3
+    return inner

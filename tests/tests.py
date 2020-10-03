@@ -59,10 +59,10 @@ class TestThree(unittest.TestCase):
 
     def test_n_threes(self):
         seventeen_threes = three.n_threes(17)
-        self.assertEqual(len(some_threes), 17)
+        self.assertEqual(len(seventeen_threes), 17)
 
-        thousand_threes = three.hand_me_some_threes(1000)
-        self.assertEqual(len(some_threes), 1000)
+        thousand_threes = three.n_threes(1000)
+        self.assertEqual(len(thousand_threes), 1000)
 
 
 

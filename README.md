@@ -71,10 +71,26 @@ a does not equal three :(
 ['Larry', 'Curly', 'Moe']
 ```
 
+**date and time**
+```
+>>> three.hours_from_now()
+'17:45:00'
+```
+```
+>>> three.days_from_now()
+'06 October 2020'
+```
+
 ## Development setup
 All the code needed is contained within:
 ```
 three.py
+```
+
+### Run tests
+
+```
+python3 -m unittest discover -s tests
 ```
 
 ## How to contribute

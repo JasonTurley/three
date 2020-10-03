@@ -1,6 +1,7 @@
 """A library dedicated to the beauty of the number three.
 
 """
+from datetime import timedelta, date, datetime
 
 import itertools
 
@@ -20,6 +21,18 @@ def cubed():
 
 def dozen():
     return 36
+
+
+def hundred():
+    return 300
+
+
+def thousand():
+    return 3000
+
+
+def million():
+    return 3000000
 
 
 def binary():
@@ -52,6 +65,41 @@ def threes():
 def n_threes(n):
     return list(itertools.islice(threes(), n))
 
+def decimal_places(i):
+    return '{:.3f}'.format(i)
+
+
+def days_ago(timestamp):
+    return timestamp - (86400 * 3)
+
+
+# Units
+
+
+def g(i):
+    return i + 'g'
+
+
+def kg(i):
+    return i + 'kg'
+
+
+def mm(i):
+    return i + 'mm'
+
+
+def cm(i):
+    return i + 'cm'
+
+
+def m(i):
+    return i + 'm'
+
+
+def km(i):
+    return i + 'km'
+
+
 # Language
 
 def letters():
@@ -82,6 +130,10 @@ def dollars():
 
 def cents():
     return '$0.03'
+
+
+def euros():
+    return '€3.00'
 
 
 # Rule of Threes
@@ -116,6 +168,15 @@ def little_pigs():
 def blind_mice():
     """Returns the names of the three blind mice in shrek"""
     return ['Forder', 'Gorder', 'Horder']
+
+
+def kingdoms():
+    """Returns the tripartite division of China from 220–280 AD"""
+    return ['Wei', 'Shu', 'Wu']
+
+
+def some():
+    return '3 people having fun ;)'
 
 
 # Food
@@ -155,3 +216,13 @@ class Three(metaclass=ThreeMeta):
     def __str__(self):
         return string()
 
+def o_clock():
+    return '🕒'
+
+# Date time
+
+def hours_from_now():
+    return (datetime.now() + timedelta(hours=3)).strftime('%H:%M:%S')
+
+def days_from_now():
+    return (date.today() + timedelta(days=3)).strftime('%d %B %Y')

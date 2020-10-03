@@ -1,5 +1,6 @@
 import unittest
 import three
+from datetime import timedelta, date, datetime
 
 class TestThree(unittest.TestCase):
     def test_three(self):
@@ -72,6 +73,14 @@ class TestThree(unittest.TestCase):
         self.assertEqual(three.Three.attributes_of_the_class_too, 3)
         self.assertEqual(three.Three.any_attribute, 3)
 
+
+    def test_hours_from_now(self):
+        expected_hour_min = (datetime.now() + timedelta(hours=3)).strftime('%H:%M')
+        self.assertTrue(three.hours_from_now().startswith(expected_hour_min))
+
+    def test_days_from_now(self):
+        expected = (date.today() + timedelta(days=3)).strftime('%d %B %Y')
+        self.assertEqual(three.days_from_now(), expected)
 
 if __name__ == "__main__":
     unittest.main()

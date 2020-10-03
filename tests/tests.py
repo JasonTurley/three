@@ -73,6 +73,46 @@ class TestThree(unittest.TestCase):
         self.assertEqual(three.Three.attributes_of_the_class_too, 3)
         self.assertEqual(three.Three.any_attribute, 3)
 
+    # Language section tests
+
+    def test_letters(self):
+        self.assertEqual(three.letters(), ['t', 'h', 'r', 'e', 'e'])
+
+    def test_spanish(self):
+        self.assertEqual(three.spanish(), 'tres')
+
+    def test_german(self):
+        self.assertEqual(three.german(), 'drei')
+
+    def test_french(self):
+        self.assertEqual(three.french(), 'drois')
+
+    def test_italian(self):
+        self.assertEqual(three.italian(), 'tre')
+
+    # Currency Section Tests
+
+    def test_dollars(self):
+        self.assertEqual(three.dollars(), '$3.00')
+
+    def test_cents(self):
+        self.assertEqual(three.cents(), '$0.03')
+
+    def test_euros(self):
+        self.assertEqual(three.euros(), '€3.00')
+
+    # Rule of Threes section test
+
+    def test_rule_of(self):
+        self.assertEqual(three.rule_of(), 'Things that come in 3s are inherently more appealing.')
+
+    def test_is_appealing(self):
+        appealing_array = [1, "two", 3.00]
+        self.assertEqual(three.is_appealing(appealing_array), True)
+
+        unappealing_array = [1, "two", 3.00, "four?"]
+        self.assertEqual(three.is_appealing(unappealing_array), False)
+
 
     def test_hours_from_now(self):
         expected_hour_min = (datetime.now() + timedelta(hours=3)).strftime('%H:%M')

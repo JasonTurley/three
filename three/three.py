@@ -3,6 +3,8 @@
 """
 from datetime import timedelta, date, datetime
 
+import itertools
+
 # Numbers
 
 def three():
@@ -56,6 +58,12 @@ def map(items):
 def reduce(items):
     return three()
 
+def threes():
+    while True:
+        yield 3
+
+def n_threes(n):
+    return list(itertools.islice(threes(), n))
 
 def decimal_places(i):
     return '{:.3f}'.format(i)
@@ -180,7 +188,6 @@ def leches():
 def peas():
     return 'As close as three peas in a pod'
 
-
 # Misc
 
 def string():
@@ -188,9 +195,26 @@ def string():
 
 def force_three(func):
     def inner(*args, **kwargs):
-        return 3
+        return three()
     return inner
 
+
+class ThreeMeta(type):
+    def __getattr__(self, _):
+        return three()
+
+'''
+3
+'''
+class Three(metaclass=ThreeMeta):
+    def __getattr__(self, _):
+        return three()
+
+    def __repr__(self):
+        return string()
+
+    def __str__(self):
+        return string()
 
 def o_clock():
     return '🕒'

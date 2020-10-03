@@ -58,6 +58,21 @@ class TestThree(unittest.TestCase):
 
         self.assertEqual(function_about_four(), 3)
 
+    def test_n_threes(self):
+        seventeen_threes = three.n_threes(17)
+        self.assertEqual(len(seventeen_threes), 17)
+
+        thousand_threes = three.n_threes(1000)
+        self.assertEqual(len(thousand_threes), 1000)
+
+    def test_three_class(self):
+        instance = three.Three()
+        self.assertEqual(instance.any_instance_attribute, 3)
+        self.assertEqual(instance.the_best_number, 3)
+
+        self.assertEqual(three.Three.attributes_of_the_class_too, 3)
+        self.assertEqual(three.Three.any_attribute, 3)
+
 
     def test_hours_from_now(self):
         expected_hour_min = (datetime.now() + timedelta(hours=3)).strftime('%H:%M')

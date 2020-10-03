@@ -7,9 +7,14 @@ This is silly personal project inspired by the equally silly JavaScript library 
 ![THREE](https://www.clker.com/cliparts/3/1/p/f/N/4/tow-md.png)
 
 ## How to install
-
+Using pip:
 ```
 pip install love-three
+```
+
+Alternatively, you can clone the repo:
+```
+git clone https://github.com/JasonTurley/three.git
 ```
 
 ## Usage examples

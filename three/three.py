@@ -134,5 +134,24 @@ def string():
 
 def force_three(func):
     def inner(*args, **kwargs):
-        return 3
+        return three()
     return inner
+
+
+class ThreeMeta(type):
+    def __getattr__(self, _):
+        return three()
+
+'''
+3
+'''
+class Three(metaclass=ThreeMeta):
+    def __getattr__(self, _):
+        return three()
+
+    def __repr__(self):
+        return string()
+
+    def __str__(self):
+        return string()
+

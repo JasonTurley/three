@@ -64,6 +64,13 @@ class TestThree(unittest.TestCase):
         thousand_threes = three.n_threes(1000)
         self.assertEqual(len(thousand_threes), 1000)
 
+    def test_three_class(self):
+        instance = three.Three()
+        self.assertEqual(instance.any_instance_attribute, 3)
+        self.assertEqual(instance.the_best_number, 3)
+
+        self.assertEqual(three.Three.attributes_of_the_class_too, 3)
+        self.assertEqual(three.Three.any_attribute, 3)
 
 
 if __name__ == "__main__":

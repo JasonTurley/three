@@ -72,6 +72,12 @@ def decimal_places(i):
 def days_ago(timestamp):
     return timestamp - (86400 * 3)
 
+def third_element(items):
+	try:
+		return items[2]
+	except Exception as exp:
+		return exp
+
 
 # Units
 

@@ -2,6 +2,8 @@
 
 """
 
+import itertools
+
 # Numbers
 
 def three():
@@ -43,6 +45,17 @@ def map(items):
 def reduce(items):
     return three()
 
+def threes():
+    while True:
+        yield 3
+
+def n_threes(n):
+    return list(itertools.islice(threes(), n))
+
+def force_three(func):
+    def inner(*args, **kwargs):
+        return 3
+    return inner
 
 # Currency
 
@@ -86,7 +99,3 @@ def leches():
 def peas():
     return 'As close as three peas in a pod'
 
-def force_three(func):
-    def inner(*args, **kwargs):
-        return 3
-    return inner

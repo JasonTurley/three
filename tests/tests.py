@@ -57,6 +57,14 @@ class TestThree(unittest.TestCase):
 
         self.assertEqual(function_about_four(), 3)
 
+    def test_n_threes(self):
+        seventeen_threes = three.n_threes(17)
+        self.assertEqual(len(some_threes), 17)
+
+        thousand_threes = three.hand_me_some_threes(1000)
+        self.assertEqual(len(some_threes), 1000)
+
+
 
 if __name__ == "__main__":
     unittest.main()

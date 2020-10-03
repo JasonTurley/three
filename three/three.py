@@ -1,6 +1,7 @@
 """A library dedicated to the beauty of the number three.
 
 """
+from datetime import timedelta, date, datetime
 
 # Numbers
 
@@ -129,3 +130,11 @@ def force_three(func):
     def inner(*args, **kwargs):
         return 3
     return inner
+
+# Date time
+
+def hours_from_now():
+    return (datetime.now() + timedelta(hours=3)).strftime('%H:%M:%S')
+
+def days_from_now():
+    return (date.today() + timedelta(days=3)).strftime('%d %B %Y')

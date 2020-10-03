@@ -73,7 +73,10 @@ def days_ago(timestamp):
     return timestamp - (86400 * 3)
 
 def third_element(items):
-	return items[2]
+	try:
+		return items[2]
+	except Exception as exp:
+		return exp
 
 
 # Units

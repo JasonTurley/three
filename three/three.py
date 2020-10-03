@@ -21,6 +21,18 @@ def dozen():
     return 36
 
 
+def hundred():
+    return 300
+
+
+def thousand():
+    return 3000
+
+
+def million():
+    return 3000000
+
+
 def binary():
     return bin(3)
 
@@ -43,6 +55,41 @@ def map(items):
 
 def reduce(items):
     return three()
+
+
+def decimal_places(i):
+    return '{:.3f}'.format(i)
+
+
+def days_ago(timestamp):
+    return timestamp - (86400 * 3)
+
+
+# Units
+
+
+def g(i):
+    return i + 'g'
+
+
+def kg(i):
+    return i + 'kg'
+
+
+def mm(i):
+    return i + 'mm'
+
+
+def cm(i):
+    return i + 'cm'
+
+
+def m(i):
+    return i + 'm'
+
+
+def km(i):
+    return i + 'km'
 
 
 # Language
@@ -77,17 +124,21 @@ def cents():
     return '$0.03'
 
 
+def euros():
+    return '€3.00'
+
+
 # Rule of Threes
 
 def rule_of():
     return 'Things that come in 3s are inherently more appealing.'
 
-  
+
 def is_appealing(items):
     return len(items) == 3
 
 
-# Novelty 
+# Novelty
 
 def musketeers():
     return ['Athos', 'Aramis', 'Porthos']
@@ -111,6 +162,15 @@ def blind_mice():
     return ['Forder', 'Gorder', 'Horder']
 
 
+def kingdoms():
+    """Returns the tripartite division of China from 220–280 AD"""
+    return ['Wei', 'Shu', 'Wu']
+
+
+def some():
+    return '3 people having fun ;)'
+
+
 # Food
 
 def leches():
@@ -130,6 +190,10 @@ def force_three(func):
     def inner(*args, **kwargs):
         return 3
     return inner
+
+
+def o_clock():
+    return '🕒'
 
 # Date time
 

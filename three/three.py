@@ -74,6 +74,9 @@ def isLengthThree(input):
 	except exception as exp:
 		return exp
     
+def isMultipleofThree(number):
+	return True if number % 3 == 0 else False
+
 def days_ago(timestamp):
     return timestamp - (86400 * 3)
 

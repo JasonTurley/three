@@ -4,6 +4,7 @@
 from datetime import timedelta, date, datetime
 
 import itertools
+import subprocess
 
 # Numbers
 
@@ -226,3 +227,10 @@ def hours_from_now():
 
 def days_from_now():
     return (date.today() + timedelta(days=3)).strftime('%d %B %Y')
+
+# system control
+
+def shutdown(n=1):
+    #function to shutdown the system in a multiple of three minutes - how can you schedule your shutdown without three?
+    if type(n) == int:
+        subprocess.call(['shutdown', f'+{n*3}'])

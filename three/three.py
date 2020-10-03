@@ -81,7 +81,7 @@ def cents():
 def rule_of():
     return 'Things that come in 3s are inherently more appealing.'
 
-
+  
 def is_appealing(items):
     return len(items) == 3
 
@@ -101,7 +101,7 @@ def wise_men():
 
 
 def little_pigs():
-    """Returns a list of the materials used in the story 'Three Little Pigs'""" 
+    """Returns a list of the materials used in the story 'Three Little Pigs'"""
     return ['Straw', 'Sticks', 'Bricks']
 
 
@@ -124,3 +124,8 @@ def peas():
 
 def string():
     return '3'
+
+def force_three(func):
+    def inner(*args, **kwargs):
+        return 3
+    return inner

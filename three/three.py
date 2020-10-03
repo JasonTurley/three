@@ -68,7 +68,12 @@ def n_threes(n):
 def decimal_places(i):
     return '{:.3f}'.format(i)
 
-
+def isLengthThree(input):
+	try:
+		return True if len(input) = 3 else False
+	except exception as exp:
+		return exp
+    
 def days_ago(timestamp):
     return timestamp - (86400 * 3)
 

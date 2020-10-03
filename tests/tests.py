@@ -26,15 +26,15 @@ class TestThree(unittest.TestCase):
     def test_factorial(self):
         self.assertEqual(three.factorial(), 3 * 2 * 1)
 
-    
+
     def test_is_three(self):
         self.assertTrue(three.is_three(3), "Should be true.")
 
 
     def test_filter(self):
         test_items = [1, 3, None, True, "happy", 3]
-        self.assertEqual(three.filter(test_items), 
-                            list(filter(three.is_three, test_items)), 
+        self.assertEqual(three.filter(test_items),
+                            list(filter(three.is_three, test_items)),
                             "The two lists should be the same.")
 
 
@@ -43,11 +43,19 @@ class TestThree(unittest.TestCase):
         self.assertEqual(three.map(test_items),
                             list(map(lambda x: 3, test_items)),
                             "The two lists should be the same.")
-                            
+
 
     def test_reduce(self):
         test_items = [1, 3, None, True, "happy", 3]
         self.assertEqual(three.reduce(test_items), 3)
+
+    def test_force_three(self):
+
+        @three.force_three
+        def function_about_four():
+            return 4
+
+        self.assertEqual(function_about_four(), 3)
 
 
 if __name__ == "__main__":

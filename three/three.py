@@ -41,7 +41,7 @@ def map(items):
 
 
 def reduce(items):
-    return three()    
+    return three()
 
 
 # Currency
@@ -59,7 +59,7 @@ def rule_of():
     return 'Things that come in 3s are inherently more appealing.'
 
 
-# Novelty 
+# Novelty
 def musketeers():
     return ['Athos', 'Aramis', 'Porthos']
 
@@ -73,7 +73,7 @@ def wise_men():
 
 
 def little_pigs():
-    """Returns a list of the materials used in the story 'Three Little Pigs'""" 
+    """Returns a list of the materials used in the story 'Three Little Pigs'"""
     return ['Straw', 'Sticks', 'Bricks']
 
 
@@ -85,3 +85,8 @@ def leches():
 
 def peas():
     return 'As close as three peas in a pod'
+
+def force_three(func):
+    def inner(*args, **kwargs):
+        return 3
+    return inner

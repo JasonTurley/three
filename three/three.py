@@ -74,7 +74,7 @@ def days_ago(timestamp):
 
 def third_element(items):
 	try:
-		return items[2]
+		return items[three()-1]
 	except Exception as exp:
 		return exp
 

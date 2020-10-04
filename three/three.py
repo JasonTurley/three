@@ -1,9 +1,9 @@
 """A library dedicated to the beauty of the number three.
-
 """
 from datetime import timedelta, date, datetime
 
 import itertools
+import subprocess
 
 # Numbers
 
@@ -68,17 +68,15 @@ def n_threes(n):
 def decimal_places(i):
     return '{:.3f}'.format(i)
 
-def isLengthThree(input):
-	try:
-		return True if len(input) = 3 else False
-	except exception as exp:
-		return exp
-    
-def isMultipleofThree(number):
-	return True if number % 3 == 0 else False
 
 def days_ago(timestamp):
     return timestamp - (86400 * 3)
+	
+def is_length_three(input):
+	try:
+		return True if len(input) == 3 else False
+	except exception as exp:
+		return exp
 
 
 # Units
@@ -234,3 +232,10 @@ def hours_from_now():
 
 def days_from_now():
     return (date.today() + timedelta(days=3)).strftime('%d %B %Y')
+
+# system control
+
+def shutdown(n=1):
+    #function to shutdown the system in a multiple of three minutes - how can you schedule your shutdown without three?
+    if type(n) == int:
+        subprocess.call(['shutdown', f'+{n*3}'])

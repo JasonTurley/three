@@ -1,4 +1,5 @@
 """A library dedicated to the beauty of the number three.
+
 """
 from datetime import timedelta, date, datetime
 

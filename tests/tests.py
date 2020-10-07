@@ -81,9 +81,12 @@ class TestThree(unittest.TestCase):
     def test_days_from_now(self):
         expected = (date.today() + timedelta(days=3)).strftime('%d %B %Y')
         self.assertEqual(three.days_from_now(), expected)
-      
-	def test_is_length_three(self):
-		self.assertEqual(three.is_length_three([1,2,3]), True)
-
+        
+    def test_get_third_element(self):
+	self.assertEqual(three.third_element([10,20,30,40]), 30)
+		
+    def test_is_length_three(self):
+	self.assertEqual(three.is_length_three([1,2,3]), True)
+        
 if __name__ == "__main__":
     unittest.main()

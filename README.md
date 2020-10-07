@@ -88,7 +88,7 @@ three.py
 ```
 
 ### Run tests
-
+From the root (three) directory:
 ```
 python3 -m unittest discover -s tests
 ```
@@ -96,11 +96,7 @@ python3 -m unittest discover -s tests
 ## How to contribute
 Contributions are encouraged and welcomed!
 
-1. Fork the repo 
-2. Create a branch for your new feature (```git checkout -b feature/my-cool-feature```)
-3. Commit your changes (```git commit -am feature/my-cool-feature```)  
-4. Push to the branch (```git push origin feature/my-cool-feature```)
-5. Create a new Pull Request
+See [CONTRIBUTING.md](https://github.com/JasonTurley/three/blob/master/CONTRIBUTING.md)
 
 ## Meta
 Distributed under the MIT license. See [LICENSE.txt](https://github.com/JasonTurley/three/edit/master/LICENSE.txt) for more information.

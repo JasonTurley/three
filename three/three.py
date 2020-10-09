@@ -246,3 +246,8 @@ def shutdown(n=1):
     #function to shutdown the system in a multiple of three minutes - how can you schedule your shutdown without three?
     if type(n) == int:
         subprocess.call(['shutdown', f'+{n*3}'])
+
+def reboot(n=1):
+    #function to reboot the system in a multiple of three minutes - again, how else would you do that?
+    if type(n) == int:
+        subprocess.call(['shutdown', '-r', f'+{n*3}'])

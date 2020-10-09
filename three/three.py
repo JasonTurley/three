@@ -79,6 +79,13 @@ def third_element(items):
 	except Exception as exp:
 		return exp
 
+def is_length_three(input):
+	try:
+		return True if len(input) == 3 else False
+	except exception as exp:
+		return exp
+
+  
 # Units
 
 

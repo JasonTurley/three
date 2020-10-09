@@ -83,7 +83,10 @@ class TestThree(unittest.TestCase):
         self.assertEqual(three.days_from_now(), expected)
         
     def test_get_third_element(self):
-	self.assertEqual(three.third_element([10,20,30,40]), 30)
+	      self.assertEqual(three.third_element([10,20,30,40]), 30)
+		
+    def test_is_length_three(self):
+	      self.assertEqual(three.is_length_three([1,2,3]), True)
         
 if __name__ == "__main__":
     unittest.main()

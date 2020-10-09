@@ -72,8 +72,20 @@ def decimal_places(i):
 
 def days_ago(timestamp):
     return timestamp - (86400 * 3)
+	
+def third_element(items):
+	try:
+		return items[three()-1]
+	except Exception as exp:
+		return exp
 
+def is_length_three(input):
+	try:
+		return True if len(input) == 3 else False
+	except exception as exp:
+		return exp
 
+  
 # Units
 
 

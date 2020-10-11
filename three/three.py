@@ -5,6 +5,7 @@ from datetime import timedelta, date, datetime
 
 import itertools
 import subprocess
+import random
 
 # Numbers
 
@@ -76,6 +77,12 @@ def days_ago(timestamp):
 def third_element(items):
 	try:
 		return items[three()-1]
+	except Exception as exp:
+		return exp
+	
+def get_three_random_elements(items):
+	try:
+		return random.sample(item, three())
 	except Exception as exp:
 		return exp
 

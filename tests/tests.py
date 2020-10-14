@@ -181,6 +181,13 @@ class TestThree(unittest.TestCase):
     def test_get_third_element(self):
 	      self.assertEqual(three.third_element([10,20,30,40]), 30)
 
+    def test_get_three_random_elements(self):
+	      elements=range(10)
+	      random_picks=three.get_three_random_elements(elements)
+	      self.assertEqual(len(random_picks), 3)
+	      self.assertTrue(any(element in elements for element in random_picks))
+	      
+
     def test_is_length_three(self):
 	      self.assertEqual(three.is_length_three([1,2,3]), True)
 

@@ -40,6 +40,14 @@ def binary():
     return bin(3)
 
 
+def octal():
+    return oct(3)
+
+
+def hexadecimal():
+    return hex(3)
+
+    
 def factorial():
     return 6
 
@@ -72,7 +80,7 @@ def decimal_places(i):
 
 def days_ago(timestamp):
     return timestamp - (86400 * 3)
-	
+
 def third_element(items):
 	try:
 		return items[three()-1]
@@ -85,7 +93,7 @@ def is_length_three(input):
 	except exception as exp:
 		return exp
 
-  
+
 # Units
 
 
@@ -118,21 +126,65 @@ def km(i):
 def letters():
     return ['t', 'h', 'r', 'e', 'e']
 
+def arabic():
+    return 'ثلاثة'
 
-def spanish():
-    return 'tres'
+def bulgarian():
+    return 'три'
 
+def chinese():
+    return '三'
 
-def german():
-    return 'drei'
+def dutch():
+    return 'drie'
 
+def english():
+    return 'three'
 
 def french():
     return 'drois'
 
+def german():
+    return 'drei'
+
+def hindi():
+    return 'तीन'
+
+def japanese():
+    return '三'
+
+def korean():
+    return '세'
 
 def italian():
     return 'tre'
+
+def malayalam():
+    return 'മൂന്ന്'
+
+def norwegian():
+    return 'tre'
+
+def portuguese():
+    return 'três'
+
+def russian():
+    return 'три'
+
+def spanish():
+    return 'tres'
+
+def thai():
+    return 'สาม'
+
+def urdu():
+    return 'تین'
+
+def vietnamese():
+    return 'số ba'
+
+def welsh():
+    return 'tri'
 
 
 # Currency
